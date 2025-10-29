@@ -1,5 +1,6 @@
 "use client";
 
+import Head from "next/head";
 import Navbar from "../../components/Navbar";
 import Image from "next/image";
 
@@ -7,11 +8,13 @@ export default function AboutPage() {
   return (
     <>
       {/* <Navbar /> */}
-      <title>About Us Page</title>
+      <Head>
+        <title>About Us Page</title>
       <meta
           name="description"
           content="Learn more about our team and how we build high-quality Next.js web applications with modern design and SEO optimization."
         />
+      </Head>
       <section className="min-h-screen bg-gray-50 text-gray-800 py-16 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           {/* Left: Image */}
