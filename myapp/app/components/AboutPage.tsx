@@ -21,11 +21,14 @@ export default function AboutPage() {
           
           {/* Left: Content Block (Col span 7) */}
           <div className="lg:col-span-7">
-            <p className="text-sm font-bold text-green-600 mb-2 uppercase font-manrope tracking-widest">
+            <p className="text-xl font-bold text-green-600 mb-2 uppercase font-manrope tracking-wide">
               — OUR FOUNDATION
             </p>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 font-manrope leading-tight">
-              Crafting Lasting Quality <br /> For Your Home Since 2003
+            <h1 className="text-4xl md:text-5xl font-light text-gray-900 mb-0 font-manrope ">
+              Crafting Lasting Quality
+            </h1>
+               <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 font-manrope leading-tight">
+             For Your Home Since 2003
             </h1>
             <p className="text-gray-700 text-lg leading-relaxed mb-6 max-w-xl font-manrope">
               Founded on the principles of durability and design excellence, we have dedicated two decades to perfecting the installation and supply of premium doors and windows. Our work is a testament to our commitment to craftsmanship and client satisfaction.
