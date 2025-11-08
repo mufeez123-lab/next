@@ -44,7 +44,7 @@ export default function HeroSlider() {
   const currentSlide = slides[currentIndex];
 
   return (
-    <section className="relative h-[80vh] rounded-bl-[150px] rounded-tr-[150px] mx-4 mt-0  overflow-hidden ">
+    <section className="relative h-[80vh] rounded-bl-[150px] rounded-tr-[150px]  mx-4 mt-0  overflow-hidden ">
       
       {/* Background Image Container with AnimatePresence */}
       <AnimatePresence initial={false}>
@@ -60,7 +60,7 @@ export default function HeroSlider() {
       </AnimatePresence>
       
       {/* Overlay */}
-      {/* <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
+      <div className="absolute inset-0 bg-black/50  bg-opacity-100"></div>
 
       {/* Content Container */}
       <div className="relative z-10 h-full flex items-end">

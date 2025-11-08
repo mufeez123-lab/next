@@ -7,7 +7,7 @@ import { Mail, Phone, MapPin, Send } from 'lucide-react';
 export default function ContactSectionGeometric() {
   return (
     // 💡 Section: Clean, light background
-    <section className="py-24 bg-white text-gray-800 h-screen">
+    <section className="py-24 bg-gray-100 text-gray-800 h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -15,7 +15,7 @@ export default function ContactSectionGeometric() {
           <p className="text-sm font-semibold uppercase text-gray-600 mb-2 font-manrope">
             — REACH OUT —
           </p>
-          <h2 className="text-4xl md:text-5xl font-extrabold font-serif">
+          <h2 className="text-4xl md:text-5xl font-extrabold font-manrope">
             Let's Discuss Your Project
           </h2>
         </div>
@@ -24,7 +24,7 @@ export default function ContactSectionGeometric() {
         <div className="relative h-auto pb-10">
           
           {/* 1. Left Block: Contact Information (Dark Accent) */}
-          <div className="bg-[#544c38] p-8 md:p-12 rounded-xl shadow-2xl relative z-10 lg:w-[40%] lg:absolute lg:top-0 lg:left-0">
+          <div className="bg-[#cf081f] p-8 md:p-12 rounded-xl shadow-2xl relative z-10 lg:w-[40%] lg:absolute lg:top-0 lg:left-0">
               <h3 className="text-3xl font-bold font-serif text-white mb-8">
                 Ready to Start?
               </h3>
@@ -101,7 +101,7 @@ const inputClassesGeo = "w-full bg-white text-gray-900 border border-gray-300 ro
 const ContactDetailGeo = ({ icon: Icon, title, detail, link }: 
   { icon: React.ElementType, title: string, detail: string, link: string }) => (
     <div className="flex items-start space-x-4 mb-6">
-      <div className="flex-shrink-0 p-3 bg-[#a3b18a] rounded-full mt-1">
+      <div className="flex-shrink-0 p-3 bg-white rounded-full mt-1">
         <Icon className="w-5 h-5 text-gray-900" />
       </div>
       <div>

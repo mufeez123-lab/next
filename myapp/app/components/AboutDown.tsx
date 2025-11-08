@@ -1,8 +1,9 @@
 "use client";
 
-import React from 'react';
+
 import Image from 'next/image';
 import Link from 'next/link'; // Assuming 'View More' links to other pages
+
 
 // Define a type for your service/product categories
 type Category = {
@@ -39,6 +40,7 @@ const categories: Category[] = [
 ];
 
 export default function CategoryHighlightSection() {
+ 
   return (
     <section className="py-20 bg-white text-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

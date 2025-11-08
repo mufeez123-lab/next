@@ -41,26 +41,26 @@ const processSteps: ProcessStep[] = [
 export default function ProcessSectionHorizontalFlow() {
   return (
     // Outer section wrapper with the deep olive background
-    <section className="py-24 bg-[#544c38] text-gray-800">
+    <section className="py-24 bg-[#cf081f] text-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
         {/* Subtitle */}
-        <p className="text-sm font-semibold uppercase text-[#a3b18a] mb-3 font-manrope">
+        <p className="text-xl font-semibold uppercase text-white mb-3 font-manrope" data-aos="fade-up"   data-aos-duration="1000">
          OUR PROCESS
         </p>
         
         {/* Main Title */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-0 font-manrope ">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-0 font-manrope " data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1200">
           Empowering You for <br className="hidden sm:inline" /> 
         </h2>
-          <h2 className="text-4xl md:text-5xl font-light text-white mb-16 -mt-10 font-manrope ">
+          <h2 className="text-4xl md:text-5xl font-light text-white mb-16 -mt-10 font-manrope " data-aos="fade-up" data-aos-delay="400"  data-aos-duration="1200">
            <br className="hidden sm:inline" /> Success with Our Services
         </h2>
 
         {/* Horizontal Flow Container */}
         <div className="relative">
             {/* Horizontal Connector Line (Hidden on small screens) */}
-            <div className="hidden lg:block absolute top-10 left-0 right-0 h-0.5 bg-gray-500 opacity-50 z-0 mx-20"></div>
+            <div className="hidden lg:block absolute top-10 left-0 right-0 h-0.5 bg-gray-500 opacity-50 z-0 mx-20" data-aos="fade-in" data-aos-delay="500"  data-aos-duration="1200"></div>
 
             {/* 4-Column Grid for Steps */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 relative z-10">
@@ -68,9 +68,9 @@ export default function ProcessSectionHorizontalFlow() {
                 <div key={index} className="flex flex-col items-center p-4">
                 
                 {/* Icon Circle (Step Number / Icon Container) */}
-                <div className="relative mb-8">
+                <div className="relative mb-8"data-aos="fade-in" data-aos-delay="500"  data-aos-duration="1200" >
                     {/* Circle Background */}
-                    <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center border-4 border-white shadow-xl">
+                    <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center border-4 border-white shadow-xl" data-aos="fade-in" data-aos-delay="500"  data-aos-duration="1200">
                         {/* Icon */}
                         <step.icon className="w-8 h-8 text-[#544c38] stroke-[2]" /> 
                     </div>
@@ -81,12 +81,12 @@ export default function ProcessSectionHorizontalFlow() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-gray-100 mb-3 font-manrope">
+                <h3 className="text-xl font-bold text-gray-100 mb-3 font-manrope"data-aos="fade-up" data-aos-delay="600"  data-aos-duration="1200">
                     {step.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-200 leading-relaxed max-w-xs font-manrope text-base">
+                <p className="text-gray-200 leading-relaxed max-w-xs font-manrope text-base" data-aos="fade-up" data-aos-delay="800"  data-aos-duration="1200">
                     {step.description}
                 </p>
                 </div>

@@ -64,10 +64,10 @@ export default function MaterialsServiceShowcase() {
         {/* Header */}
         <div className="text-center mb-16">
        
-          <h2 className="text-4xl text-start md:text-6xl font-extrabold mb-2 font-manrope">
+          <h2 className="text-4xl text-start md:text-6xl font-extrabold mb-2 font-manrope" data-aos="fade-up"  data-aos-duration="1000">
             Premium Materials,
           </h2>
-            <h2 className="text-4xl text-start md:text-6xl font-light font-manrope">
+            <h2 className="text-4xl text-start md:text-6xl font-light font-manrope" data-aos="fade-up" data-aos-delay="200"  data-aos-duration="1000">
             Unmatched Quality.
           </h2>
         </div>
@@ -92,13 +92,7 @@ export default function MaterialsServiceShowcase() {
             disableOnInteraction: false, // Continue autoplay even after user interacts
           }}
           
-          // 💡 Pagination Settings (Navigation Dots)
-          pagination={{ 
-            clickable: true,
-            // Styling the pagination dots to be visible over the dark background
-            bulletClass: 'swiper-pagination-bullet bg-gray-600 w-2.5 h-2.5 transition-colors duration-300',
-            bulletActiveClass: 'bg-[#a3b18a] !w-4', // Active dot is wider and green
-          }}
+       
           
           className="pb-10" // Add padding to accommodate pagination dots below
         >
@@ -127,8 +121,8 @@ export default function MaterialsServiceShowcase() {
                     {/* Dark Overlay (Fades in on hover) */}
                     <motion.div
                       variants={{
-                        rest: { opacity: 0.2 },
-                        hover: { opacity: 0.7 },
+                        rest: { opacity: 0.5  },
+                        hover: { opacity: 0.5 },
                       }}
                       className="absolute inset-0 bg-gray-900 z-10 transition duration-500"
                     />

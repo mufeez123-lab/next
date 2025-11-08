@@ -21,21 +21,21 @@ export default function AboutPage() {
           
           {/* Left: Content Block (Col span 7) */}
           <div className="lg:col-span-7">
-            <p className="text-xl font-bold text-green-600 mb-2 uppercase font-manrope tracking-wide">
+            <p className="text-xl font-bold text-[#cf081f] mb-2 uppercase font-manrope tracking-wide" data-aos="fade-up"  data-aos-duration="1000">
               — OUR FOUNDATION
             </p>
-            <h1 className="text-4xl md:text-5xl font-light text-gray-900 mb-0 font-manrope ">
+            <h1 className="text-4xl md:text-5xl font-light text-gray-900 mb-0 font-manrope " data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1300">
               Crafting Lasting Quality
             </h1>
-               <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 font-manrope leading-tight">
+               <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 font-manrope leading-tight" data-aos="fade-up" data-aos-delay="400"  data-aos-duration="1500">
              For Your Home Since 2003
             </h1>
-            <p className="text-gray-700 text-lg leading-relaxed mb-6 max-w-xl font-manrope">
+            <p className="text-gray-700 text-lg leading-relaxed mb-6 max-w-xl font-manrope" data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1700">
               Founded on the principles of durability and design excellence, we have dedicated two decades to perfecting the installation and supply of premium doors and windows. Our work is a testament to our commitment to craftsmanship and client satisfaction.
             </p>
             
             {/* Mission / Value Points */}
-            <div className="flex space-x-6 mb-8 text-gray-900 font-semibold">
+            <div className="flex space-x-6 mb-8 text-gray-900 font-semibold" data-aos="fade-up" data-aos-delay="300"  data-aos-duration="1900">
                 <p className="flex items-center space-x-2">
                     <span className="text-green-600 text-2xl font-extrabold">✓</span>
                     <span>Expert Installation</span>
@@ -48,12 +48,12 @@ export default function AboutPage() {
 
 
             {/* CTA and Phone Contact */}
-            <div className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 mt-6">
+            <div className="flex flex-col sm:flex-row sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 mt-6" data-aos="fade-up" data-aos-delay="300"  data-aos-duration="2100">
               
                 
                 {/* Phone contact */}
                 <div className="flex items-center space-x-3">
-                    <div className="bg-green-600 p-3 rounded-full flex items-center justify-center">
+                    <div className="bg-[#cf081f] p-3 rounded-full flex items-center justify-center">
                         {/* Icon remains the same */}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +72,7 @@ export default function AboutPage() {
                     </div>
                     <div>
                         <p className="text-gray-600 text-sm font-sans">24/7 Support</p>
-                        <p className="text-green-600 text-xl font-bold font-sans">
+                        <p className="text-[#cf081f] text-xl font-bold font-sans">
                             +12 105 936 5500
                         </p>
                     </div>
@@ -82,15 +82,14 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Right: Image and Asymmetrical Color Block (Col span 5) */}
+     
           <div className="lg:col-span-5 relative h-[500px] w-full">
-            {/* Asymmetrical Color Block (green) */}
-            <div className="absolute top-10 right-0 w-[90%] h-full bg-[#544c38] rounded-l-3xl z-0 hidden lg:block"></div>
-            
-            {/* Image (positioned to overlap the block) */}
+     
+            <div className="absolute top-10 right-0 w-[90%] h-full bg-[#cf081f] rounded-l-3xl z-0 hidden lg:block" data-aos="fade-in" data-aos-delay="2" data-aos-duration="2500"></div>
+  
             <div className="absolute top-0 left-0 lg:left-[-50px] w-full h-[450px] rounded-2xl overflow-hidden shadow-2xl z-10">
               <Image
-                src="/images/buildings.webp" // New image path
+                src="/images/buildings.webp"
                 alt="Professional service member working"
                 layout="fill"
                 objectFit="cover"
