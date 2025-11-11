@@ -22,7 +22,7 @@ const Navbar = () => {
 
         {/* Menu Links */}
         <ul className="hidden md:flex space-x-8 text-gray-800 font-medium">
-          <li><Link href="/" className="hover:text-orange-600">Ho</Link></li>
+          <li><Link href="/" className="hover:text-orange-600">Home</Link></li>
           <li><Link href="/about" className="hover:text-orange-600">About</Link></li>
           <li><Link href="/services" className="hover:text-orange-600">Services</Link></li>
           <li><Link href="/clients" className="hover:text-orange-600">Clients</Link></li>
