@@ -1,85 +1,86 @@
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, ArrowRight } from "lucide-react";
-import Link from "next/link";
+// components/Footer.tsx
 
-export default function Footer() {
+import React from 'react';
+
+const Footer: React.FC = () => {
+  const footerLinks = [
+    {
+      title: 'About',
+      links: ['About Us', 'Why Choose Us', 'Our Team', 'Solutions', 'Partners', 'Core Values'],
+    },
+    {
+      title: 'Services',
+      links: ['Our Projects', 'News & Updates', 'Terms & Conditions', 'Support Center', 'Contact'],
+    },
+  ];
+
   return (
-    <footer className="font-sans">
-      
-      {/* 1. TOP CTA SECTION with Image Background */}
-      <div className="relative h-64 flex items-center justify-center bg-cover bg-center" 
-           style={{ backgroundImage: "url('/images/footer-cta-bg.jpg')" }}> 
+    // The main container for the footer content, positioned within the larger layout
+    <footer className="w-full bg-gray-300 text-gray-800 py-12 px-6 md:px-12 lg:px-24   rounded-t-3xl shadow-2xl">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start">
         
-        {/* Overlay for readability */}
-        <div className="absolute inset-0 bg-gray-900/70"></div>
-        
-        <div className="relative z-10 text-white text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-            Ready to Build Your Next Project?
-          </h2>
-          {/* Main CTA Button */}
-          <Link
-            href="/contact"
-            className="inline-flex items-center bg-yellow-400 text-gray-900 px-8 py-3 rounded-full font-bold shadow-lg hover:bg-yellow-500 transition duration-300"
-          >
-            Start an Enquiry 
-            <ArrowRight size={20} className="ml-2" />
-          </Link>
+        {/* Left Section: Logo and Description */}
+        <div className="mb-8 lg:mb-0 lg:w-1/3">
+          <div className="flex items-center space-x-2 mb-4">
+            {/* Placeholder for 'spaciaz' logo text/image */}
+            <span className="text-3xl font-bold text-gray-900">spaciaz</span>
+          </div>
+          <p className="text-sm text-gray-600 max-w-xs">
+            We are creators of transformative spaces that inspire, innovate, and endure.
+          </p>
         </div>
-      </div>
 
-      {/* 2. BOTTOM INFO GRID */}
-      <div className="bg-gray-900 text-gray-300 py-12">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
-
-          {/* Company & Socials */}
-          <div>
-            <h2 className="text-2xl font-bold text-white mb-4">MyBrand.</h2>
-            <p className="text-gray-400 text-sm mb-4">
-              Building materials supplied with excellence and reliability since 2024.
-            </p>
-            <div className="flex gap-4">
-              <Link href="#" className="hover:text-yellow-400 transition"><Facebook size={20} /></Link>
-              <Link href="#" className="hover:text-yellow-400 transition"><Instagram size={20} /></Link>
-              <Link href="#" className="hover:text-yellow-400 transition"><Twitter size={20} /></Link>
+        {/* Center Section: Navigation Links */}
+        <div className="flex flex-col sm:flex-row gap-10 lg:gap-20 mb-8 lg:mb-0 lg:w-1/3">
+          {footerLinks.map((section, index) => (
+            <div key={index}>
+              {/* Note: The image uses a combined list, but we'll structure for better organization */}
+              <ul className="space-y-2">
+                {section.links.map((link, linkIndex) => (
+                  <li key={linkIndex}>
+                    <a 
+                      href="#" // Replace with actual paths
+                      className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+                    >
+                      {link}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
+          ))}
+        </div>
+
+        {/* Right Section: Contact Info and Socials */}
+        <div className="lg:w-1/3 flex flex-col items-start lg:items-end text-left lg:text-right">
+          <div className="mb-4">
+            <p className="text-xl font-semibold text-gray-900 mb-1">(084) 123-45688</p>
+            <a 
+              href="mailto:spaciaz@example.com"
+              className="text-lg text-yellow-600 font-medium hover:text-yellow-700 transition-colors border-b border-yellow-600"
+            >
+              spaciaz@example.com
+            </a>
           </div>
 
-          {/* Key Links */}
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-3">Key Pages</h3>
-            <ul className="space-y-2">
-              <li><Link href="/services" className="hover:text-yellow-400 transition">Services</Link></li>
-              <li><Link href="/clients" className="hover:text-yellow-400 transition">Our Clients</Link></li>
-              <li><Link href="/profile" className="hover:text-yellow-400 transition">Company Profile</Link></li>
-              <li><Link href="/contact" className="hover:text-yellow-400 transition">Get a Quote</Link></li>
-            </ul>
-          </div>
-
-          {/* Contact Details */}
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-3">Reach Out</h3>
-            <ul className="space-y-3 text-sm">
-              <li className="flex items-start gap-2">
-                <MapPin size={18} className="mt-1 flex-shrink-0"/> 
-                <span>Mangalore, India</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Phone size={18} className="flex-shrink-0"/> 
-                <span>+91 63625 14956</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Mail size={18} className="flex-shrink-0"/> 
-                <span>mufizmalar@gmail.com</span>
-              </li>
-            </ul>
+          <div className="flex space-x-3 text-sm text-gray-500">
+            <a href="#" className="hover:text-gray-700">Facebook</a>
+            <span className="mx-1">·</span>
+            <a href="#" className="hover:text-gray-700">Instagram</a>
+            <span className="mx-1">·</span>
+            <a href="#" className="hover:text-gray-700">YouTube</a>
+            <span className="mx-1">·</span>
+            <a href="#" className="hover:text-gray-700">Twitter</a>
           </div>
         </div>
       </div>
-
-      {/* Copyright */}
-      <div className="bg-gray-900 border-t border-gray-800 pt-6 pb-4 text-center text-xs text-gray-500">
-        © {new Date().getFullYear()} MyBrand. All rights reserved.
+      
+      {/* Copyright Section */}
+      <div className="mt-8 pt-4 border-t border-gray-100 text-center text-sm text-gray-500">
+        &copy; 2025 <span className="font-semibold">spaciaz</span>. All Rights Reserved.
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
